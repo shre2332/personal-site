@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects-page.component.css']
 })
 export class ProjectsPageComponent implements OnInit {
+    
+  active:Boolean = false;
 
   constructor() { }
 

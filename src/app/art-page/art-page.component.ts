@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtPageComponent implements OnInit {
 
-  constructor() { }
+  public art_collection = [];
+
+  active : Boolean = true;
+
+  constructor() {
+
+  }
 
   ngOnInit() {
+    art_collection = [
+        {src:"assets/imagetest.JPG", title: "face"},
+        {src:"assets/imagetest.JPG", title: "kurt"},
+        {src:"assets/imagetest.JPG", title: "what"},
+        {src:"assets/imagetest.JPG", title: "face"}
+       ];
   }
 
 }

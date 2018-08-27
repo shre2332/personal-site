@@ -1,3 +1,16 @@
-<p>
-  art-page works!
-</p>
+<div class="container" *ngIf="active">
+  <ul ng-repeat="piece in art_collection">
+    <li>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card shadow p-3 mb-5 bg-white rounded text-center">
+            <div class="card-body">
+              <!--<img src={{piece.src}} alt="..." class="img-thumbnail">-->
+              <p class="card-text">{{piece.title}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
