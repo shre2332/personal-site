@@ -11,6 +11,7 @@ export class AppComponent {
   
   public function set_mode(input)
   {
+    alert (input)
     for (var i =0; i < this.mode.length; i++)
     {
       if (i == Number(input))
@@ -22,5 +23,6 @@ export class AppComponent {
         this.mode[i] = false;
       }
     }
+    alert(mode);
   }
 }

@@ -24,7 +24,7 @@
             <div class="card-body">
               <h5 class="card-title">Resume</h5>
               <p class="card-text">My informal resume</p>
-              <button href="#" (click)="set_mode(3)" class="btn btn-primary">See Resume</button>
+              <a href="#" (click)="set_mode(3)" class="btn btn-primary">See Resume</a>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@
             <div class="card-body">
               <h5 class="card-title">About</h5>
               <p class="card-text">About Me</p>
-              <button href="#" (click)="set_mode(4)" class="btn btn-primary">See About</button>
+              <a href="#" (click)="set_mode(4)" class="btn btn-primary">See About</a>
             </div>
           </div>
         </div>

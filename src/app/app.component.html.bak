@@ -19,7 +19,6 @@
     </div>
 
     <app-main-page [active]=mode[0] (modeEvent)="set_mode($event)"></app-main-page>
-    <app-projects-page [active]=mode[1] (modeEvent)="set_mode($event)"></app-projects-page>
     <app-art-page [active]=mode[2] (modeEvent)="set_mode($event)"></app-art-page>
     <app-about-page [active]=mode[4] (modeEvent)="set_mode($event)"></app-about-page>
     <app-resume-page [active]=mode[3] (modeEvent)="set_mode($event)"></app-resume-page>
@@ -28,6 +27,12 @@
     <app-project-page [active]=mode[6] (modeEvent)="set_mode($event)"></app-project-page>
     <app-project-page [active]=mode[7] (modeEvent)="set_mode($event)"></app-project-page>
     <app-project-page [active]=mode[8] (modeEvent)="set_mode($event)"></app-project-page>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <app-projects-page [active]=mode[1] (modeEvent)="set_mode($event)"></app-projects-page>
+      </div>
+    </div>
 
     <!--<div class="col-lg-6">-->
     <div class="card shadow mx-5 bg-white rounded text-center d-flex">

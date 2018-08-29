@@ -4,11 +4,11 @@ import { Component, Output  } from '@angular/core';
 import { Component, EventEmitter  } from '@angular/core';
 
 @Component({
-  selector: 'app-main-page',
-  templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.css']
+  selector: 'app-project-page',
+  templateUrl: './project-page.component.html',
+  styleUrls: ['./project-page.component.css']
 })
-export class MainPageComponent implements OnInit {
+export class ProjectPageComponent implements OnInit {
 
   @Input() active:Boolean;
   @Output() modeEvent = new EventEmitter();

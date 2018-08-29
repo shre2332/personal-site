@@ -7,6 +7,7 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { ArtPageComponent } from './art-page/art-page.component';
 import { ResumePageComponent } from './resume-page/resume-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AboutPageComponent } from './about-page/about-page.component';
     ProjectsPageComponent,
     ArtPageComponent,
     ResumePageComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    ProjectPageComponent
   ],
   imports: [
     BrowserModule

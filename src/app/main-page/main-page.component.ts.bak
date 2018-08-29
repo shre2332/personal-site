@@ -20,6 +20,7 @@ export class MainPageComponent implements OnInit {
   
   public  function set_mode(input)
   {
+    alert ("clicked");
     this.modeEvent.emit(input);
   }
 
