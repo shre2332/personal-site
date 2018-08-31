@@ -17,5 +17,10 @@ export class ResumePageComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  set_mode(input)
+  {
+    this.modeEvent.emit(input);
+  }
 
 }

@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  mode: Boolean = [true,false,false,false,false,false,false,false,false];
+  mode: Boolean[] = [true,false,false,false,false,false,false,false,false];
   
-  public function set_mode(input)
+  set_mode(input)
   {
     for (var i =0; i < this.mode.length; i++)
     {

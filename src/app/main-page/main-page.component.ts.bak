@@ -18,9 +18,8 @@ export class MainPageComponent implements OnInit {
   ngOnInit() {
   }
   
-  public  function set_mode(input)
+  set_mode(input)
   {
-    alert ("clicked");
     this.modeEvent.emit(input);
   }
 

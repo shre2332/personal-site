@@ -18,7 +18,7 @@ export class AboutPageComponent implements OnInit {
   ngOnInit() {
   }
   
-  public  function set_mode(input)
+  set_mode(input)
   {
     this.modeEvent.emit(input);
   }
