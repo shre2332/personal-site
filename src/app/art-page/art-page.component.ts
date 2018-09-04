@@ -10,21 +10,29 @@ import { EventEmitter} from '@angular/core';
 })
 export class ArtPageComponent implements OnInit {
 
-  public art_collection = [];
+  //MyArrayType = Array<{id: number, text: string}>;
+
+  /*arr: MyArrayType = [
+      {id: 1, text: 'Sentence 1'},
+      {id: 2, text: 'Sentence 2'},
+      {id: 3, text: 'Sentence 3'},
+      {id: 4, text: 'Sentenc4 '},
+  ];*/
 
   @Input() active : Boolean;
 
   constructor() {
-
+    //alert(MyArrayType);
   }
 
   ngOnInit() {
-    this.art_collection = [
+    //alert("ng sucks big");
+    /*this.art_collection = [
         {src:"assets/imagetest.JPG", title: "face"},
         {src:"assets/imagetest.JPG", title: "kurt"},
         {src:"assets/imagetest.JPG", title: "what"},
         {src:"assets/imagetest.JPG", title: "face"}
-       ];
+       ];*/
   }
 
 }

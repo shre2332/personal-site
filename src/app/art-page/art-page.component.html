@@ -1,16 +1,43 @@
 <div class="container" *ngIf="active">
-  <ul ng-repeat="piece in art_collection">
-    <li>
+  <!--<ul ng-repeat="piece in art_collection">
+    <li>-->
       <div class="row">
         <div class="col-sm-6">
           <div class="card shadow p-3 mb-5 bg-white rounded text-center">
             <div class="card-body">
-              <!--<img src={{piece.src}} alt="..." class="img-thumbnail">-->
-              <p class="card-text">{{piece.title}}</p>
+              <img src="assets/imagetest.JPG" alt="..." class="img-thumbnail">
+              <!--<p class="card-text">{{piece.title}}</p>-->
+              <!--<p>{{piece}}</p>-->
             </div>
           </div>
         </div>
+
+        <div class="col-sm-6">
+          <div class="card shadow p-3 mb-5 bg-white rounded text-center">
+            <div class="card-body">
+              <img src="assets/imagetest.JPG" alt="..." class="img-thumbnail">
+              <app-art-modal></app-art-modal>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card shadow p-3 mb-5 bg-white rounded text-center">
+            <div class="card-body">
+              <img src="assets/imagetest.JPG" alt="..." class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card shadow p-3 mb-5 bg-white rounded text-center">
+            <div class="card-body">
+              <img src="assets/imagetest.JPG" alt="..." class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+
       </div>
-    </li>
-  </ul>
+    <!--</li>
+  </ul>-->
 </div>

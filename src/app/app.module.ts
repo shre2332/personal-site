@@ -8,6 +8,7 @@ import { ArtPageComponent } from './art-page/art-page.component';
 import { ResumePageComponent } from './resume-page/resume-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
+import { ArtModalComponent } from './art-modal/art-modal.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProjectPageComponent } from './project-page/project-page.component';
     ArtPageComponent,
     ResumePageComponent,
     AboutPageComponent,
-    ProjectPageComponent
+    ProjectPageComponent,
+    ArtModalComponent
   ],
   imports: [
     BrowserModule
