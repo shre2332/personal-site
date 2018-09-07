@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtModalComponent implements OnInit {
 
+  showModal : Boolean = true;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  open_modal()
+  {
+    //alert("in show modal");
+    this.showModal = true;
   }
 
 }
