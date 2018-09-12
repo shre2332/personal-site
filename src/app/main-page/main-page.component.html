@@ -2,25 +2,28 @@
       <div class="row">
         <div class="card-group">
         <div class="col-sm-6">
-          <div class="card shadow p-3 mb-5 bg-white rounded text-center">
-            <div class="card-body">
-              <h5 class="card-title">Projects</h5>
+          <div class="card shadow p-3 mb-5 bg-white rounded text-center" (click)="set_mode(1)">
+            <img class="card-img" src="assets/imagetest.JPG" alt="Card image cap">
+            <div class="card-img-overlay"><!--card-body">-->
+              <br/>
+              <br/>
+              <h1 class="card-title display-4" style="color:white;">Projects</h1>
               <p class="card-text">My working projects</p>
-              <button (click)="set_mode(1)" class="btn btn-primary">See Projects</button>
+              <!--<button (click)="set_mode(1)" class="btn btn-primary">See Projects</button>-->
             </div>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card shadow p-3 mb-5 bg-white rounded text-center">
+          <div class="card p-3 mb-5 bg-light rounded text-center" (click)="set_mode(2)">
             <div class="card-body">
-              <h5 class="card-title">Art</h5>
+              <h1 class="card-title display-4">Art</h1>
               <p class="card-text">My Art</p>
-              <button href="#" (click)="set_mode(2)" class="btn btn-primary">See Art</button>
+              <!--<button href="#" (click)="set_mode(2)" class="btn btn-primary">See Art</button>-->
             </div>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card shadow p-3 mb-5 bg-white rounded text-center">
+          <div class="card shadow p-3 mb-5 bg-white rounded text-center" (click)="set_mode(3)">
             <div class="card-body">
               <h5 class="card-title">Resume</h5>
               <p class="card-text">My informal resume</p>
