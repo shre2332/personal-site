@@ -4,45 +4,47 @@
   <div class="row">
     <div class="card-group">
     <div class="col-sm-6">
-      <div class="card shadow p-3 mb-5 bg-white rounded text-center">
-        <div class="card-body">
-          <h5 class="card-title">Macro Fit</h5>
+      <div class="card p-3 mb-5 rounded text-center" [ngClass]="{'bg-light': !hover1, 'bg-primary': hover1, 'text-white': hover1}" (click)="set_mode(5)" style = "cursor:pointer" (mouseenter)="hover1 = true" (mouseleave)="hover1 = false">
+        <img class="card-img" src="assets/imagetest.JPG" alt="Card image cap">
+            <div class="card-img-overlay"><!--<div class="card-body">-->
+          <h5 class="card-title display-4">Macro Fit</h5>
           <p class="card-text"></p>
-          <button href="#" (click)="set_mode(5)" class="btn btn-primary">See More</button>
+          <!--<button href="#" (click)="set_mode(5)" class="btn btn-primary">See More</button>-->
         </div>
       </div>
     </div>
     <div class="col-sm-6">
-      <div class="card shadow p-3 mb-5 bg-white rounded text-center">
+      <div class="card p-3 mb-5 rounded text-center">
         <div class="card-body">
-          <h5 class="card-title">Roller Ball / Cell Game</h5>
+          <h5 class="card-title display-4">Roller Ball</h5>
+          <h5 class="card-title display-4">Cell Game</h5>
           <p class="card-text"></p>
           <button href="#" (click)="set_mode(6)" class="btn btn-primary">See More</button>
         </div>
       </div>
     </div>
     <div class="col-sm-6">
-      <div class="card shadow p-3 mb-5 bg-white rounded text-center">
+      <div class="card p-3 mb-5 rounded text-center">
         <div class="card-body">
-          <h5 class="card-title">Otto</h5>
+          <h5 class="card-title display-4">Otto</h5>
           <p class="card-text"></p>
           <button href="#" (click)="set_mode(7)" class="btn btn-primary">See More</button>
         </div>
       </div>
     </div>
     <div class="col-sm-6">
-      <div class="card shadow p-3 mb-5 bg-white rounded text-center">
+      <div class="card p-3 mb-5 rounded text-center">
         <div class="card-body">
-          <h5 class="card-title">Bubble Buster</h5>
+          <h5 class="card-title display-4">Bubble Buster</h5>
           <p class="card-text"></p>
           <button href="#" (click)="set_mode(8)" class="btn btn-primary">See More</button>
         </div>
       </div>
     </div>
     <div class="col-sm-6">
-      <div class="card shadow p-3 mb-5 bg-white rounded text-center">
+      <div class="card p-3 mb-5 rounded text-center">
         <div class="card-body">
-          <h5 class="card-title">Continuos Art</h5>
+          <h5 class="card-title display-4">Continuos Art</h5>
           <p class="card-text"></p>
           <button href="#" (click)="set_mode(2)" class="btn btn-primary">See Art</button>
         </div>

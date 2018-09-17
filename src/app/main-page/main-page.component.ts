@@ -12,6 +12,12 @@ export class MainPageComponent implements OnInit {
 
   @Input() active:Boolean;
   @Output() modeEvent = new EventEmitter();
+  hover1=false;
+  hover2=false;
+  hover3=false;
+  hover4=false;
+  hover5=false;
+  hover6=false;
 
   constructor() { }
 
@@ -21,6 +27,12 @@ export class MainPageComponent implements OnInit {
   set_mode(input)
   {
     this.modeEvent.emit(input);
+    this.hover1=false;
+    this.hover2=false;
+    this.hover3=false;
+    this.hover4=false;
+    this.hover5=false;
+    this.hover6=false;
   }
 
 }

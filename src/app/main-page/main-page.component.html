@@ -2,19 +2,16 @@
       <div class="row">
         <div class="card-group">
         <div class="col-sm-6">
-          <div class="card shadow p-3 mb-5 bg-white rounded text-center" (click)="set_mode(1)">
-            <img class="card-img" src="assets/imagetest.JPG" alt="Card image cap">
-            <div class="card-img-overlay"><!--card-body">-->
-              <br/>
-              <br/>
-              <h1 class="card-title display-4" style="color:white;">Projects</h1>
-              <p class="card-text">My working projects</p>
+          <div class="card p-3 mb-5 rounded text-center" [ngClass]="{'bg-light': !hover1, 'bg-primary': hover1, 'text-white': hover1}" (click)="set_mode(1)" style = "cursor:pointer" (mouseenter)="hover1 = true" (mouseleave)="hover1 = false">
+            <div class="card-body">
+              <h1 class="card-title display-4">Projects</h1>
+              <p class="card-text">My Working Projects</p>
               <!--<button (click)="set_mode(1)" class="btn btn-primary">See Projects</button>-->
             </div>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card p-3 mb-5 bg-light rounded text-center" (click)="set_mode(2)">
+          <div class="card p-3 mb-5 bg-light rounded text-center"  [ngClass]="{'bg-light': !hover2, 'bg-primary': hover2, 'text-white': hover2}" (click)="set_mode(2)" style = "cursor:pointer" (mouseenter)="hover2 = true" (mouseleave)="hover2 = false">
             <div class="card-body">
               <h1 class="card-title display-4">Art</h1>
               <p class="card-text">My Art</p>
@@ -23,38 +20,34 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card shadow p-3 mb-5 bg-white rounded text-center" (click)="set_mode(3)">
+          <div class="card p-3 mb-5 bg-light rounded text-center" [ngClass]="{'bg-light': !hover3, 'bg-primary': hover3, 'text-white': hover3}" (click)="set_mode(3)" style = "cursor:pointer" (mouseenter)="hover3 = true" (mouseleave)="hover3 = false">
             <div class="card-body">
-              <h5 class="card-title">Resume</h5>
+              <h5 class="card-title display-4">Resume</h5>
               <p class="card-text">My informal resume</p>
-              <button href="#" (click)="set_mode(3)" class="btn btn-primary">See Resume</button>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card shadow p-3 mb-5 bg-white rounded text-center">
+          <div class="card p-3 mb-5 bg-light rounded text-center" [ngClass]="{'bg-light': !hover4, 'bg-primary': hover4, 'text-white': hover4}" (click)="set_mode(4)" style = "cursor:pointer" (mouseenter)="hover4 = true" (mouseleave)="hover4 = false">
             <div class="card-body">
-              <h5 class="card-title">About</h5>
+              <h5 class="card-title display-4">About</h5>
               <p class="card-text">About Me</p>
-              <button href="#" (click)="set_mode(4)" class="btn btn-primary">See About</button>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card shadow p-3 mb-5 bg-white rounded text-center">
+          <div class="card p-3 mb-5 bg-light rounded text-center" [ngClass]="{'bg-light': !hover5, 'bg-primary': hover5, 'text-white': hover5}" (click)="set_mode(5)" style = "cursor:pointer" (mouseenter)="hover5 = true" (mouseleave)="hover5 = false">
             <div class="card-body">
-              <h5 class="card-title">My Github</h5>
+              <h5 class="card-title display-4">Github</h5>
               <p class="card-text">A link to my github</p>
-              <a href="#" class="btn btn-primary">See Github</a>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card shadow p-3 mb-5 bg-white rounded text-center">
+          <div class="card p-3 mb-5 bg-light rounded text-center" [ngClass]="{'bg-light': !hover6, 'bg-primary': hover6, 'text-white': hover6}" (click)="set_mode(6)" style = "cursor:pointer" (mouseenter)="hover6 = true" (mouseleave)="hover6 = false">
             <div class="card-body">
-              <h5 class="card-title">My Instagram</h5>
+              <h5 class="card-title display-4">Instagram</h5>
               <p class="card-text">My instagram account</p>
-              <a href="#" class="btn btn-primary">See Instagram</a>
             </div>
           </div>
         </div>

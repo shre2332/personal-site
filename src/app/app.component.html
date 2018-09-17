@@ -1,12 +1,11 @@
 <div>
   <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" (click)="set_mode(0)">KS</a>
+    <a class="navbar-brand" (click)="set_mode(0)" style = "cursor:pointer">Kurt Shreckengast</a>
     <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Contact</button>
     </form>
   </nav>
-
+  <br/>
   <div class="container">
 
     <div class="row">
@@ -29,7 +28,7 @@
     <app-project-page [active]=mode[8] (modeEvent)="set_mode($event)"></app-project-page>
 
     <!--<div class="col-lg-6">-->
-    <div class="card shadow mx-5 bg-white rounded text-center d-flex">
+    <div class="card mx-5 bg-light rounded text-center">
       <div class="card-body">
         <p class="text-center card-text" style="font-size: 80%"><!--style="font-family: 'Gloria Hallelujah', cursive;">-->
         Last of the freelance hackers
