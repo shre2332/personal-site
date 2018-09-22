@@ -22,17 +22,23 @@ export class MainPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
-  
-  set_mode(input)
-  {
-    this.modeEvent.emit(input);
     this.hover1=false;
     this.hover2=false;
     this.hover3=false;
     this.hover4=false;
     this.hover5=false;
     this.hover6=false;
+  }
+  
+  set_mode(input)
+  {
+    this.hover1=false;
+    this.hover2=false;
+    this.hover3=false;
+    this.hover4=false;
+    this.hover5=false;
+    this.hover6=false;
+    this.modeEvent.emit(input);
   }
 
 }
